@@ -5,7 +5,7 @@ FROM node:20-alpine
 # 리눅스 명령어임
 WORKDIR /app
 
-# 빈번히 수정되는 부분은 멘 마지막에 사용할것 
+# 빈번히 수정되는 부분은 멘 마지막에 사용할것
 COPY package.json package-lock.json ./
 
 #RUN npm install 대신에  npm ci 가 더좋다 이유는 install은 최신버젼을 다운 실행하는데 
